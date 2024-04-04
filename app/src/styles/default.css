@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento:wght@400;700&display=swap');
+
+:root {
+  --font-family-header: 'Oswald', sans-serif;
+  --font-family: 'Quattrocento', serif;
+  --font-size: 14px;
+  --font-weight: 400;
+  --line-height: 1.6;
+  --transition: all .5s ease;
+
+  --primary: #1175b8;
+  --secondary: #f5f5f5;
+  --background: #fff;
+  --txt: #333;
+  --info: #eefbff;
+  --info-border: #c0def7;
+  --info-txt: #2b5274;
+  --success: #f0ffee;
+  --success-border: #c0f7d8;
+  --success-txt: #2b7434;
+  --danger: #fee;
+  --danger-border: #f7c0c0;
+  --danger-txt: #742b2b;
+  --gutter: 10px;
+}
+
+[data-theme=dark] {
+  --primary: #fff;
+  --secondary: #222;
+  --background: #181818;
+  --txt: #8b8b8b;
+  --info: #0c2932;
+  --info-border: #06181e;
+  --info-txt: #61b0c9;
+  --success: #244820;
+  --success-border: #122a10;
+  --success-txt: #7acb71;
+  --danger: #461919;
+  --danger-border: #280c0c;
+  --danger-txt: #c75959;
+}
+
+.grid {
+    columns: 5 150px;
+    gap: var(--gutter);
+    margin: var(--gutter);
+}

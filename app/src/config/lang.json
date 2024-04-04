@@ -1,0 +1,31 @@
+{
+  "version": "1.1.9",
+  "newVersionDetected": "We have detected a new version of the application. Would you like to clear the cache to ensure you have the latest update?",
+  "render": "Render",
+  "renderMdAlt": "Render Markdown",
+  "saveToMd": "Save md",
+  "saveToMdAlt": "Save to Markdown file",
+  "saveToHtml": "Save HTML",
+  "saveToHtmlAlt": "Save to HTML file",
+  "outputHtml":"Html output",
+  "help": "Help",
+  "darkMode": "Theme mode",
+  "print": "Print",
+  "printAlt": "Print preview",
+  "demo": "Demo",
+  "demoAlt": "View editor demo",
+  "settings": "Settings",
+  "themecolor":"Theme color",
+  "selecttheme":"Select theme",
+  "close": "Close",
+  "openLocalFile": "Open local file",
+  "detafiles": "Drive files",
+  "openDetaFiles": "Open Deta files",
+  "saveOnDeta": "Save revision Deta",
+  "mediafiles":"Media files",
+  "modal": {
+    "label": "Custom CSS",
+    "save": "Save",
+    "saved": "Saved 👌"
+  }
+}

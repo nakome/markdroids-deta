@@ -1,0 +1,288 @@
+<section style="padding:10px;">
+
+    <h1>ShortCodes</h1>
+    <p>This documentation provides information about various ShortCodes and their usage within your application. Shortcodes
+        are an efficient way to enhance and format your content with minimal effort.</p>
+
+    <h3>Icon List Information</h3>
+    <table class="table-icon">
+        <thead>
+            <tr>
+                <th><strong>Icon</strong></th>
+                <th><strong>Description</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img width="32" height="32" src="./api/icons/svg/render.svg" /></td>
+                <td>This icon is used to trigger a render preview. It likely shows a rendering or preview of some content or
+                    design. </td>
+            </tr>
+            <tr>
+                <td><img width="32" height="32" src="./api/icons/svg/floppy.svg" /></td>
+                <td>This icon is used to save content or data to Deta Drive, similar to how a floppy disk icon is
+                    traditionally associated with saving data. </td>
+            </tr>
+            <tr>
+                <td><img width="32" height="32" src="./api/icons/svg/save-html.svg" /></td>
+                <td>Clicking this icon allows you to save a file in HTML format. </td>
+            </tr>
+            <tr>
+                <td><img width="32" height="32" src="./api/icons/svg/save-md.svg" /></td>
+                <td>Clicking this icon allows you to save a file in Markdown format. </td>
+            </tr>
+            <tr>
+                <td><img width="32" height="32" src="./api/icons/svg/code.svg" /></td>
+                <td>Clicking this icon allows to show Html output. </td>
+            </tr>
+            <tr>
+                <td><img width="32" height="32" src="./api/icons/svg/help.svg" /></td>
+                <td>This icon is associated with showing a dialog or modal that provides help and assistance to the user.
+                    It's often used to offer guidance or information about the application's features. </td>
+            </tr>
+            <tr>
+                <td><img width="32" height="32" src="./api/icons/svg/light-mode.svg" /></td>
+                <td>This icon allows users to switch between light and dark modes. It's commonly found in applications to
+                    adjust the theme or appearance of the interface. </td>
+            </tr>
+            <tr>
+                <td><img width="32" height="32" src="./api/icons/svg/print.svg" /></td>
+                <td>Clicking this icon initiates the printing of a document or result, typically in a format suitable for a
+                    physical printer. </td>
+            </tr>
+            <tr>
+                <td><img width="32" height="32" src="./api/icons/svg/image.svg" /></td>
+                <td>Clicking on this icon will grant you access to the image gallery, allowing you to upload images for your document.</td>
+            </tr>
+            <tr>
+                <td><img width="32" height="32" src="./api/icons/svg/drive-menu.svg" /></td>
+                <td>Clicking this icon opens a dialog menu specifically for managing Deta drive files. It provides options
+                    for interacting with files stored in Deta Drive. </td>
+            </tr>
+            <tr>
+                <td><img src="./api/icons/svg/settings.svg" /></td>
+                <td>Clicking this icon typically opens a settings menu, allowing users to customize the application,
+                    including options like changing custom CSS (Cascading Style Sheets). </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>List of ShortCodes</h3>
+    <table>
+        <thead>
+            <tr>
+                <th><strong>Shortcode</strong></th>
+                <th><strong>Description</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Details</td>
+                <td>Use the details shortcode to create expandable sections</td>
+            </tr>
+            <tr>
+                <td>Color</td>
+                <td>Add color to your text using the color shortcode</td>
+            </tr>
+            <tr>
+                <td>Justify</td>
+                <td>Align your text with full justification.</td>
+            </tr>
+            <tr>
+                <td>Center</td>
+                <td>Center-align your text.</td>
+            </tr>
+            <tr>
+                <td>Right</td>
+                <td>Right-align your text.</td>
+            </tr>
+            <tr>
+                <td>Divider</td>
+                <td>Insert a simple divider to separate content.</td>
+            </tr>
+            <tr>
+                <td>Note</td>
+                <td>Create notes with different styles such as success, info, or danger.</td>
+            </tr>
+            <tr>
+                <td>Columns</td>
+                <td>Divide content into two or three columns for better readability.</td>
+            </tr>
+            <tr>
+                <td>Boxes/Box</td>
+                <td>Simple and easy responsive boxes.</td>
+            </tr>
+            <tr>
+                <td>Comment</td>
+                <td>Include comments to annotate your content.</td>
+            </tr>
+            <tr>
+                <td>Header</td>
+                <td>Generate Markdown headers to structure your content.</td>
+            </tr>
+            <tr>
+                <td>Tasks</td>
+                <td>Create task lists with checkboxes.</td>
+            </tr>
+            <tr>
+                <td>Table</td>
+                <td>Generate Markdown tables easily.</td>
+            </tr>
+            <tr>
+                <td>Img</td>
+                <td>Insert image with inside div with class option.</td>
+            </tr>
+            <tr>
+                <td>Grid</td>
+                <td>Wraps [Img] width grid class, perfect for galleries.</td>
+            </tr>
+            <tr>
+                <td>Lorem</td>
+                <td>Generate placeholder text (lorem ipsum).</td>
+            </tr>
+            <tr>
+                <td>Youtube</td>
+                <td>Embed Youtube videos by specifying the video ID.</td>
+            </tr>
+            <tr>
+                <td>Archive</td>
+                <td>Embed videos from Archive.org.</td>
+            </tr>
+            <tr>
+                <td>Dtube</td>
+                <td>Embed Dtube videos.</td>
+            </tr>
+            <tr>
+                <td>Dailymotion</td>
+                <td>Embed videos from Dailymotion.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Examples</h3>
+    <p>Use the <code>Details</code>ShortCodes to create expandable sections that reveal additional information when clicked.
+    </p>
+
+    <pre>[Details name="More info" open]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/Details]</pre>
+    <p>Change the text color using the <code>Color</code>ShortCodes.</p>
+
+    <pre>[Color name="#f55"]Red[/Color]
+[Color name="rgb(0 0 255)"]Blue[/Color]
+[Color name="green"]Green[/Color]</pre>
+
+    <h3>Text-align</h3>
+    <p><strong>Justify:</strong></p>
+    <p>Use the Justify ShortCode to fully justify your text.</p>
+    <pre>[Justify]Your fully justified text goes here.[/Justify]</pre>
+
+    <p><strong>Right:</strong></p>
+    <p>Right-align your text using the Right ShortCode.</p>
+    <pre>[Right]Your right-aligned text goes here.[/Right]</pre>
+
+    <p><strong>Divider</strong></p>
+    <p>Insert dividers to separate sections of your content.</p>
+    <pre>[Divider]</pre>
+
+    <h3>Notes</h3>
+    <p><strong>Note (Success)</strong></p>
+    <p>Create success notes to highlight important information.</p>
+    <pre>[Note name="success"]This is a success note.[/Note]</pre>
+
+    <p><strong>Note (Info)</strong>Generate informational notes to convey relevant details.</p>
+    <pre>[Note name="info"]This is an info note.[/Note]</pre>
+
+    <p><strong>Note (Danger)</strong>Use danger notes to alert readers about potential risks.</p>
+    <pre>[Note name="danger"]This is a danger note.[/Note]</pre>
+
+    <h3>Columns <strong>(Use only for text and images, use Boxes for other elements)</strong></h3>
+    <p>Divide your content into multiple columns for a more organized presentation.</p>
+    <pre>[Columns num=2]Content for two columns goes here.[/Columns]</pre>
+
+    <p><strong>Three Columns</strong></p>
+    <pre>[Columns num=3]Content for three columns goes here.[/Columns]</pre>
+
+    <h3>Boxes</h3>
+    <p>Simple and easy responsive boxes.</p>
+    <pre>[Boxes]
+[Box num=1] Column 1 [/Box]
+[Box num=1 class="extend class"] Column 1 [/Box]
+    [/Boxes]</pre>
+    <p><strong>2 Columns</strong></p>
+    <pre>[Boxes]
+[Box num=2] Column 1/2 [/Box]
+[Box num=2] Column 1/2 [/Box]
+    [/Boxes]</pre>
+    <p>Center Column 1/2</p>
+    <pre>[Boxes class="center"]
+[Box num=2] Column 1/2 [/Box]
+    [/Boxes]</pre>
+    <p><strong>3 Columns</strong></p>
+    <pre>[Boxes]
+[Box num=3] Column 1/3 [/Box]
+[Box num=3] Column 1/3 [/Box]
+[Box num=3] Column 1/3 [/Box]
+    [/Boxes]</pre>
+
+    <p><strong>4 Columns</strong></p>
+    <pre>[Boxes]
+[Box num=4] Column 1/4 [/Box]
+[Box num=4] Column 1/4 [/Box]
+[Box num=4] Column 1/4 [/Box]
+[Box num=4] Column 1/4 [/Box]
+    [/Boxes]</pre>
+
+    <h3>Grid</h3>
+    <p>Combine with the ShortCode [Img] to create galleries. </p>
+    <p><strong>Note: </strong>Grid only work with html or Img ShortCode. if you like use Markdown use
+        <code>[Grid md]</code>and remember you can use custom css.
+    </p>
+    <pre>[Grid]
+[Img src="https://i.ibb.co/D8TSt0T/atle-mo-h-KWXt-AXe-Xco-unsplash.jpg"]
+[Img src="https://i.ibb.co/NmdC1J3/alessandro-viaro-fw-Wj5-Y1-Ig-Qg-unsplash.jpg"]
+[Img src="https://i.ibb.co/t87wPBh/atle-mo-rqyq-OGf1-RV0-unsplash.jpg"]
+[Img src="https://i.ibb.co/Vt2SFZk/austin-schmid-65-F-502jo-DA-unsplash.jpg"]
+[Img src="https://i.ibb.co/6RNQsYV/averie-woodard-F-m-WO-dz-NNI-unsplash.jpg"]
+[Img src="https://i.ibb.co/NLsFswB/chris-abney-q-P76-Vx1zps-unsplash.jpg"]
+[Img src="https://i.ibb.co/L84XfpV/christiann-koepke-9-IY4az8knqc-unsplash.jpg"]
+[Img src="https://i.ibb.co/XCRjJQJ/david-joyce-Etxza-BKEv-E4-unsplash.jpg"]
+    [/Grid]</pre>
+
+    <h3>Img</h3>
+    <p>Extend Markdown image</p>
+    <pre>// Basic
+[Img src="source"]</pre>
+
+    <pre>// Advanced
+[Img src="source" cls="wrap classname" href="url" alt="img description"]</pre>
+
+    <h3>Comments</h3>
+    <p>Include comments to provide additional context or explanations.</p>
+    <pre>[Comment]This is a comment.[/Comment]</pre>
+
+    <h3>Videos</h3>
+    <p>Embed videos from various platforms using dedicated ShortCodes.</p>
+    <pre>[Youtube id="YourYoutubeVideoID" width="100%" height="100%"]</pre>
+
+    <p><strong>Archive.org</strong><a href="https://archive.org/embed/">https://archive.org/embed/</a><span
+            style="color:blue">fansub_Chobits</span></p>
+    <pre>[Archive id="YourArchiveVideoID" width="100%" height="100%"]</pre>
+
+    <p><strong>Dtube</strong></p>
+    <pre>[Dtube id="YourDtubeVideoID" width="100%" height="100%"]</pre>
+
+    <p><strong>Dailymotion</strong></p>
+    <pre>[Dailymotion id="YourDailymotionVideoID"]</pre>
+
+    <p>This documentation serves as a comprehensive guide to using these ShortCodes effectively. Experiment with them to
+        enhance the presentation of your content and provide a richer user experience.</p>
+
+    <h3>Api</h3>
+    <p>List of available endpoints</p>
+    <pre>// Get all public files
+[url]/api/json/all
+// Get only one
+[url]/api/json/[uid]
+// Get all photos
+[url]/api/json/photos</pre>
+    <p><strong>Uid is a Json with key and update in base64.</strong></p>
+</section>

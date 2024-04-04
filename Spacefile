@@ -1,0 +1,19 @@
+v: 0
+icon: icon.png
+micros:
+  - name: app
+    src: ./app
+    engine: static
+    dev: npm run dev -- --port $PORT
+    commands:
+      - npm run build
+    primary: true
+    serve: dist
+  - name: api
+    src: api
+    engine: nodejs16
+    run: node index.js
+    path: api
+    dev: npm run dev
+    public_routes:
+      - "/*"

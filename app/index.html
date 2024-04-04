@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Markdroids</title>
+    <meta name="title" content="Markdroids" />
+    <meta name="description" content="Markdown with steroids" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://deta.space/discovery/@monchex/markdroids" />
+    <meta property="og:title" content="Markdroids" />
+    <meta property="og:description" content="Markdown with steroids" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://deta.space/discovery/@monchex/markdroids" />
+    <meta property="twitter:title" content="Markdroids" />
+    <meta property="twitter:description" content="Markdown with steroids" />
+
+    <!-- Android  -->
+    <meta name="theme-color" content="#fefefe">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-title" content="Manifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Windows  -->
+    <meta name="msapplication-navbutton-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#218ef4">
+
+    <!-- Pinned Sites  -->
+    <meta name="application-name" content="Markdroids">
+    <meta name="msapplication-tooltip" content="Markdown with steroids.">
+    <meta name="msapplication-starturl" content="/">
+
+    <!-- Tap highlighting  -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- UC Mobile Browser  -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+
+    <meta itemprop="name" content="Markdroids" />
+    <meta itemprop="description" content="Markdown with steroids" />
+    <link crossorigin rel="apple-touch-icon" sizes="57x57" href="./api/icons/apple-icon-57x57.png">
+    <link crossorigin rel="apple-touch-icon" sizes="60x60" href="./api/icons/apple-icon-60x60.png">
+    <link crossorigin rel="apple-touch-icon" sizes="72x72" href="./api/icons/apple-icon-72x72.png">
+    <link crossorigin rel="apple-touch-icon" sizes="76x76" href="./api/icons/apple-icon-76x76.png">
+    <link crossorigin rel="apple-touch-icon" sizes="114x114" href="./api/icons/apple-icon-114x114.png">
+    <link crossorigin rel="apple-touch-icon" sizes="120x120" href="./api/icons/apple-icon-120x120.png">
+    <link crossorigin rel="apple-touch-icon" sizes="144x144" href="./api/icons/apple-icon-144x144.png">
+    <link crossorigin rel="apple-touch-icon" sizes="152x152" href="./api/icons/apple-icon-152x152.png">
+    <link crossorigin rel="apple-touch-icon" sizes="180x180" href="./api/icons/apple-icon-180x180.png">
+    <link crossorigin rel="icon" type="image/png" sizes="192x192"  href="./api/icons/android-icon-192x192.png">
+    <link crossorigin rel="icon" type="image/png" sizes="32x32" href="./api/icons/favicon-32x32.png">
+    <link crossorigin rel="icon" type="image/png" sizes="96x96" href="./api/icons/favicon-96x96.png">
+    <link crossorigin rel="icon" type="image/png" sizes="16x16" href="./api/icons/favicon-16x16.png">
+    <link crossorigin rel="manifest" href="./api/icons/manifest.webmanifest">
+
+    <meta name="msapplication-TileColor" content="#21202e">
+    <meta crossorigin name="msapplication-TileImage" content="./api/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./src/styles/main.css"/>
+  </head>
+  <body data-theme="light">
+
+    <noscript>
+      <div class="noscript">
+        <div class="loader"></div>
+        <p>Please enable Javascript to run this app.</p>
+        <style rel="stylesheet">
+          .noscript{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 80px auto;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          .loader {
+            width: 60px;
+            aspect-ratio: 4;
+            background: radial-gradient(closest-side at calc(100%/6) 50%,#000 90%,#0000) 0/75% 100%;
+            position: relative;
+            animation: l15-0 1s infinite linear;
+          }
+          .loader::before {
+            content:"";
+            position: absolute;
+            background: inherit;
+            clip-path: inset(0 0 0 50%);
+            inset: 0;
+            animation: l15-1 0.5s infinite linear;
+          }
+          @keyframes l15-0 { 
+              0%,49.99% {transform: scale(1)}
+              50%,100%  {transform: scale(-1)} 
+          }
+          @keyframes l15-1 { 
+              0%       {transform: translateX(-37.5%) rotate(0turn)} 
+              80%,100% {transform: translateX(-37.5%) rotate(1turn)} 
+          }
+        </style>
+      </div>
+    </noscript>
+
+    <header>
+      <section class="left">
+        <!-- Botón para renderizar Markdown -->
+        <button class="button" type="button" id="eyeBtn" title="Render Markdown">
+          <img alt="Eye icon" src="./api/icons/svg/eye.svg"/>
+        </button>
+        <!-- Botón para renderizar Markdown -->
+        <button class="button" type="button" id="renderBtn" title="Render Markdown">
+          <img alt="Render icon" src="./api/icons/svg/render.svg"/>
+        </button>
+        <!-- Input para abrir un archivo local -->
+        <input type="file" accept=".md" class="file-input" id="openFile" title="Open local file">
+        <!-- Botón para guardar una revisión en Deta -->
+        <button class="button" type="button" id="btnSaveFile" title="Save revision Deta">
+          <img alt="Save revision icon" src="./api/icons/svg/floppy.svg"/>
+        </button>
+        <!-- Botón para guardar en un archivo Markdown -->
+        <button class="button" type="button" id="btnSaveMd" title="Save to Md file">
+          <img alt="Save Markdown icon" src="./api/icons/svg/save-md.svg"/>
+        </button>
+        <!-- Botón para guardar en un archivo HTML -->
+        <button class="button" type="button" id="btnSaveHtml" title="Save to HTML file">
+          <img alt="Save Html icon" src="./api/icons/svg/save-html.svg"/>
+        </button>
+        <!-- Botón para mostrar el código HTML generado -->
+        <button class="button" type="button" id="btnHtmlOutput" title="Html output">
+          <img alt="Show Html code" src="./api/icons/svg/code.svg"/>
+        </button>
+        <!-- Botón de ayuda -->
+        <button class="button" type="button" id="btnHelp" title="Help">
+          <img alt="Help icon" src="./api/icons/svg/help.svg"/>
+        </button>
+      </section>
+      <section class="right">
+        <!-- Botón para cambiar al modo oscuro -->
+        <button class="button" type="button" id="btnDarkMode" title="Theme mode">
+          <img alt="dark mode icon" src="./api/icons/svg/light-mode.svg"/>
+        </button>
+        <!-- Botón para vista previa de impresión -->
+        <button class="button" type="button" id="btnPrint" title="Print preview">
+          <img alt="Print icon" src="./api/icons/svg/print.svg"/>
+        </button>
+        <!-- Botón para abrir archivos de imagen -->
+        <button class="button" type="button" id="btnImages" title="Open image files">
+          <img alt="Image menu icon" src="./api/icons/svg/image.svg"/>
+        </button>
+        <!-- Botón para abrir archivos de Deta -->
+        <button class="button" type="button" id="btnDrive" title="Open Deta files">
+          <img alt="Drive menu icon" src="./api/icons/svg/drive-menu.svg"/>
+        </button>
+        <!-- Botón de configuración -->
+        <button class="button" type="button" id="btnSettings" title="Settings">
+          <img alt="Settings icon" src="./api/icons/svg/settings.svg"/>
+        </button>
+      </section>
+    </header>
+    <main>
+      <!-- Área de texto para el editor -->
+      <textarea id="editorArea" spellcheck="false" title="Editor"></textarea>
+      <!-- Marco iframe para la vista previa -->
+      <iframe id="iFrameContent" src="./api/frame.html" frameborder="0" title="Preview"></iframe>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

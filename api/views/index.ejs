@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta name="author" content="Moncho Varela" />
+    <meta name="title" content="Markdroids | <%= data.name %>" />
+
+    <!-- Android  -->
+    <meta name="theme-color" content="#fefefe">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-title" content="Manifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Windows  -->
+    <meta name="msapplication-navbutton-color" content="#fefefe">
+    <meta name="msapplication-TileColor" content="#12b886">
+
+    <!-- Pinned Sites  -->
+    <meta name="application-name" content="<%= data.title %>">
+    <meta name="msapplication-starturl" content="/">
+
+    <!-- Tap highlighting  -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- UC Mobile Browser  -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+
+    <meta itemprop="name" content="<%= data.title %>" />
+
+    <link crossorigin rel="apple-touch-icon" sizes="180x180" href="/api/icons/apple-touch-icon.png">
+    <link crossorigin rel="icon" type="image/png" sizes="32x32" href="/api/icons/favicon-32x32.png">
+    <link crossorigin rel="icon" type="image/png" sizes="16x16" href="/api/icons/favicon-16x16.png">
+    <link crossorigin rel="manifest" href="/api/icons/manifest.json">
+
+    <title>
+        <%= data.name %> - <%= data.update %>
+    </title>
+    <link rel="stylesheet" href="/api/frame.css" />
+    <style rel="stylesheet">
+        <%- styles %>
+    </style>
+</head>
+
+<body data-theme="<%= theme %>">
+    <%- content %>
+</body>
+
+</html>
