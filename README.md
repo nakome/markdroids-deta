@@ -3,7 +3,9 @@
 
 I'm a Markdown editor but special, Why?, because i have Shortcodes.
 
-![Markdroids](screenshots/screen-1.png)
+<video autoplay controls style="width:fit-content">
+    <source src="./screenshots/video.mp4" type="video/mp4">
+</video>
 
 
 **What can Markdroids do?**

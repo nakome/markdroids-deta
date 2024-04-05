@@ -15,8 +15,8 @@ export const parseShortCodes = (output) => ShortCode.parse(output);
  */
 export const parseShortCodesOutput = (output) => {
   try {
-    const parseShortcode = parseShortCodes(output);
-    const toMd = parse(parseShortcode);
+    const parseShortCode = parseShortCodes(output);
+    const toMd = parse(parseShortCode);
     return toMd;
   } catch (error) {
     // Handling any errors that may occur during analysis or conversion

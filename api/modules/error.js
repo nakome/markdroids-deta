@@ -1,3 +1,4 @@
+
 export const renderError = {
   baseUrl: `//${process.env.DETA_SPACE_APP_HOSTNAME}`,
   data: [],
