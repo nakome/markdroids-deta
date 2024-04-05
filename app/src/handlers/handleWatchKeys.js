@@ -1,6 +1,6 @@
 import PrintFrame from "../utils/PrintFrame.js";
 import TransformMD from "../modules/TransformMd.js";
-
+import {iFrame,editorArea} from "../modules/Vars.js";
 /**
  * Handle different key events and perform corresponding actions.
  *
