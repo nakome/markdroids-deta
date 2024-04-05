@@ -136,39 +136,39 @@ Divide your content into multiple columns for a more organized presentation.
 Simple and easy responsive boxes.
 
     [Boxes]
-    [Box num=1] Column 1 [/Box]
-    [Box num=1 class="extend class"] Column 1 [/Box]
-        [/Boxes]
+        [Box num=1] Column 1 [/Box]
+        [Box num=1 class="extend class"] Column 1 [/Box]
+    [/Boxes]
 
 **2 Columns**
 
     [Boxes]
-    [Box num=2] Column 1/2 [/Box]
-    [Box num=2] Column 1/2 [/Box]
-        [/Boxes]
+        [Box num=2] Column 1/2 [/Box]
+        [Box num=2] Column 1/2 [/Box]
+    [/Boxes]
 
 Center Column 1/2
 
     [Boxes class="center"]
-    [Box num=2] Column 1/2 [/Box]
-        [/Boxes]
+        [Box num=2] Column 1/2 [/Box]
+    [/Boxes]
 
 **3 Columns**
 
     [Boxes]
-    [Box num=3] Column 1/3 [/Box]
-    [Box num=3] Column 1/3 [/Box]
-    [Box num=3] Column 1/3 [/Box]
-        [/Boxes]
+        [Box num=3] Column 1/3 [/Box]
+        [Box num=3] Column 1/3 [/Box]
+        [Box num=3] Column 1/3 [/Box]
+    [/Boxes]
 
 **4 Columns**
 
     [Boxes]
-    [Box num=4] Column 1/4 [/Box]
-    [Box num=4] Column 1/4 [/Box]
-    [Box num=4] Column 1/4 [/Box]
-    [Box num=4] Column 1/4 [/Box]
-        [/Boxes]
+        [Box num=4] Column 1/4 [/Box]
+        [Box num=4] Column 1/4 [/Box]
+        [Box num=4] Column 1/4 [/Box]
+        [Box num=4] Column 1/4 [/Box]
+    [/Boxes]
 
 ### Grid
 
@@ -177,24 +177,24 @@ Combine with the ShortCode [Img] to create galleries.
 **Note:** Grid only work with html or Img ShortCode. if you like use Markdown use `[Grid md]`and remember you can use custom css.
 
     [Grid]
-    [Img src="https://i.ibb.co/D8TSt0T/atle-mo-h-KWXt-AXe-Xco-unsplash.jpg"]
-    [Img src="https://i.ibb.co/NmdC1J3/alessandro-viaro-fw-Wj5-Y1-Ig-Qg-unsplash.jpg"]
-    [Img src="https://i.ibb.co/t87wPBh/atle-mo-rqyq-OGf1-RV0-unsplash.jpg"]
-    [Img src="https://i.ibb.co/Vt2SFZk/austin-schmid-65-F-502jo-DA-unsplash.jpg"]
-    [Img src="https://i.ibb.co/6RNQsYV/averie-woodard-F-m-WO-dz-NNI-unsplash.jpg"]
-    [Img src="https://i.ibb.co/NLsFswB/chris-abney-q-P76-Vx1zps-unsplash.jpg"]
-    [Img src="https://i.ibb.co/L84XfpV/christiann-koepke-9-IY4az8knqc-unsplash.jpg"]
-    [Img src="https://i.ibb.co/XCRjJQJ/david-joyce-Etxza-BKEv-E4-unsplash.jpg"]
+        [Img src="https://i.ibb.co/D8TSt0T/atle-mo-h-KWXt-AXe-Xco-unsplash.jpg"]
+        [Img src="https://i.ibb.co/NmdC1J3/alessandro-viaro-fw-Wj5-Y1-Ig-Qg-unsplash.jpg"]
+        [Img src="https://i.ibb.co/t87wPBh/atle-mo-rqyq-OGf1-RV0-unsplash.jpg"]
+        [Img src="https://i.ibb.co/Vt2SFZk/austin-schmid-65-F-502jo-DA-unsplash.jpg"]
+        [Img src="https://i.ibb.co/6RNQsYV/averie-woodard-F-m-WO-dz-NNI-unsplash.jpg"]
+        [Img src="https://i.ibb.co/NLsFswB/chris-abney-q-P76-Vx1zps-unsplash.jpg"]
+        [Img src="https://i.ibb.co/L84XfpV/christiann-koepke-9-IY4az8knqc-unsplash.jpg"]
+        [Img src="https://i.ibb.co/XCRjJQJ/david-joyce-Etxza-BKEv-E4-unsplash.jpg"]
     [/Grid]
 
 ### Img
 
 Extend Markdown image
 
-// Basic
+    // Basic
     [Img src="source"]
 
-// Advanced
+    // Advanced
     [Img src="source" cls="wrap classname" href="url" alt="img description"]
 
 ### Comments
