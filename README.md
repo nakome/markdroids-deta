@@ -5,8 +5,6 @@ I'm a Markdown editor but special, Why?, because i have Shortcodes.
 
 ![Markdroids](screenshots/screen-1.png)
 
-![Markdroids](screenshots/screen-2.png)
-
 **What can Markdroids do?**
 
 - Rich Markdown Editing: I offer a user-friendly interface for creating and editing Markdown documents with a visual approach.
