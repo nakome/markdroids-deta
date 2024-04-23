@@ -437,9 +437,6 @@ pre {
     line-height: var(--line-height);
     white-space: pre-wrap;
     padding: 5px 8px;
-    background: var(--color-950);
-    border: 1px solid var(--color-950);
-    color: var(--color-200);
     margin: 0 0 10px
 }
 

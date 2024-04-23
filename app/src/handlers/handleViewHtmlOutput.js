@@ -1,3 +1,4 @@
+import { codeToHtml } from 'https://esm.sh/shiki@1.0.0'
 import CreateNewModal from "../utils/CreateModal.js";
 import { TransformMDToHtml } from "../modules/TransformMd";
 import CopyToClipboard from "../utils/CopyToClipboard.js";
@@ -28,20 +29,25 @@ export default function handleViewHtmlOutput(evt) {
 
         win.body.innerHTML = `<div class="code-box-copy">
           <button id="copyHtmlOutput" class="code-box-copy_btn">🍺 Copy Code</button>
-          <pre id="outputHtml" class="language-html">${element.innerHTML}</pre>
+          <div id="outputHtml"></div>
         </div>`;
 
-        let w = setTimeout(() => {
+        let w = setTimeout(async () => {
 
           let btnCopy = document.querySelector("#copyHtmlOutput");
           let outputHtml = document.querySelector("#outputHtml");
+
+          outputHtml.innerHTML = await codeToHtml(element.textContent, {
+            lang: 'html',
+            theme: 'ayu-dark'
+          })
 
           btnCopy.addEventListener("click", (evt) =>
             CopyToClipboard(evt, outputHtml, btnCopy)
           );
 
           clearTimeout(w);
-        }, 200);
+        }, 50);
       },
     });
 }
