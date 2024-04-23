@@ -15,16 +15,13 @@ export default function handleToggleTheme(evt) {
     document.body.dataset.theme = th;
     // Update the data-theme of the specific element
     window.frames[0].document.body.dataset.theme = th;
-
     // Update data in storage
     Storage("Markdroids-data-theme", th);
-
     // We update the global settings
     const globalSettings = {
         style: Storage("Markdroids-custom-css"),
         theme: Storage("Markdroids-data-theme"),
     };
-
     // Save the global settings
     saveBinSettings(globalSettings);
 }

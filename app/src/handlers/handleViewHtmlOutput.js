@@ -18,8 +18,7 @@ export default function handleViewHtmlOutput(evt) {
     let win = CreateNewModal({
       target: evt.target,
       title: config.outputHtml,
-      width: "50%",
-      height: "95%",
+
       html: `<div id="card" class="card-group"><div class="loader"></div></div>`,
       callback: async (options) => {
 
@@ -39,7 +38,7 @@ export default function handleViewHtmlOutput(evt) {
 
           outputHtml.innerHTML = await codeToHtml(element.textContent, {
             lang: 'html',
-            theme: 'ayu-dark'
+            theme: 'tokyo-night'
           })
 
           btnCopy.addEventListener("click", (evt) =>

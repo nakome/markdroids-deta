@@ -29,8 +29,6 @@ export default function handleGetImages(evt) {
     let win = CreateNewModal({
       target: evt.target,
       title: config.mediafiles,
-      width: "50%",
-      height: "70%",
       html: template,
       callback: (options) => {
         setTimeout(() => {

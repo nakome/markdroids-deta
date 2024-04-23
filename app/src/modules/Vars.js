@@ -16,4 +16,6 @@ export const iFramePreview = document.getElementById("iFrameContent");
 export const btnHtmlOutput = document.getElementById("btnHtmlOutput");
 export const btnImages = document.getElementById("btnImages");
 export const iFrame = iFramePreview.contentWindow;
+export const dropdown = document.getElementById("dropdown");
 export const editor = new Editor(editorArea);
+

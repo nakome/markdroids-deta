@@ -21,6 +21,7 @@ import {
   eyeBtn,
   editorArea,
   iFramePreview,
+  dropdown,
   editor,
 } from "./modules/Vars.js";
 
@@ -44,6 +45,9 @@ import handleWatchKeys from "./handlers/handleWatchKeys.js";
 import { handleToggleContextMenu, handleContextMenu } from "./handlers/handleContextMenu.js";
 import handleViewPreview from "./handlers/handleViewPreview.js";
 import handleLoadTemplate from "./handlers/handleLoadTemplate.js";
+import handleToggleMenu from "./handlers/handleToggleMenu.js";
+
+console.log('🚀 All is ok');
 
 // Insert in localStorage
 const savedMd = Storage("Markdroids-saved");
@@ -89,6 +93,8 @@ if (themeColor === "dark") {
   btnDarkMode.querySelector("img").src = "./api/icons/svg/light-mode.svg";
 }
 
+
+
 // Clear the cache of old applications
 DeleteCacheFromNewVersion("Markdroids-version", config.version);
 
@@ -128,3 +134,4 @@ editor.area.addEventListener("keydown", handleWatchKeys);
 editor.area.addEventListener("contextmenu", handleContextMenu);
 // Event to hide the context menu when clicking in the editor area
 editor.area.addEventListener("click", handleToggleContextMenu);
+dropdown.querySelector('button').addEventListener("click", handleToggleMenu);

@@ -202,7 +202,7 @@ export function togglePublicDriveFile() {
  * @param {Event} evt - The event object triggered by the click
  * @return {Promise} A promise that resolves after the file is updated
  */
-export function updateDriveFile() {
+export function updateDriveFile(id) {
   const updateButtons = document.querySelectorAll(".card-update-btn");
 
   updateButtons.forEach((updateBtn) => {
@@ -216,7 +216,7 @@ export function updateDriveFile() {
         const name = evt.target.dataset.name;
 
         const outputDb = await CLOUDDB.put({
-          key: evt.target.dataset.key,
+          key: id ?? evt.target.dataset.key,
           name: name,
           update: `${updateDate} ${updateTime}`,
           type: evt.target.dataset.type,

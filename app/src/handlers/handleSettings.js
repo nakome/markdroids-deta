@@ -24,10 +24,6 @@ export default function handleSettings(evt) {
         : "light";
 
     let template = `<div class="settings">
-        <div class="form-group">
-          <label for="theme">${config.themecolor} <small id="label-theme"></small></label>
-          <select name="theme" id="select-theme"><option selected disabled>--- ${config.selecttheme} --</option><option value="default">Theme Default</option><option value="light">Theme Light</option><option value="dark">Theme Dark</option><option value="rose">Theme Rose</option><option value="pink">Theme Pink</option><option value="fuchsia">Theme Fuchsia</option><option value="purple">Theme Purple</option><option value="violet">Theme Violet</option><option value="indigo">Theme Indigo</option><option value="blue">Theme Blue</option><option value="sky">Theme Sky</option><option value="cyan">Theme Cyan</option><option value="teal">Theme Teal</option><option value="emerald">Theme Emerald</option><option value="green">Theme Green</option><option value="lime">Theme Lime</option><option value="yellow">Theme Yellow</option><option value="amber">Theme Amber</option><option value="orange">Theme Orange</option><option value="red">Theme Red</option><option value="stone">Theme Stone</option><option value="neutral">Theme Neutral</option><option value="zinc">Theme Zinc</option><option value="gray">Theme Gray</option><option value="slate">Theme Slate</option></select>
-        </div>
         <textarea id="settings" name="settings" spellcheck="false" placeholder="${config.modal.label}">${css}</textarea>
         <button class="button" id="saveSettings" type="button" title="Save settings">${config.modal.save}</button>
         </div>`
@@ -39,19 +35,6 @@ export default function handleSettings(evt) {
         callback: (options) => {
             const btn = document.getElementById("saveSettings");
             const textarea = document.getElementById("settings");
-            const selectTheme = document.getElementById("select-theme");
-
-            selectTheme.addEventListener("change", (evt) => {
-                const thValue = evt.target.value;
-                document.body.setAttribute("data-theme", thValue);
-
-                Storage("Markdroids-data-theme", thValue);
-
-                const globalSettings = {
-                    style: Storage("Markdroids-custom-css"),
-                    theme: Storage("Markdroids-data-theme"),
-                };
-            });
 
             btn.addEventListener("click", (evt) => {
                 const value = textarea.value;
